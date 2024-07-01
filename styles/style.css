@@ -1,0 +1,298 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1200px;
+    font-family: 'font', 'sans-serif';
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-container {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.head{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.head-logop {
+    margin-right: 40px;
+}
+
+.header-nav {
+    padding: 27px 45px;
+    background-color: rgb(241, 230, 230);
+}
+
+/* .header-list {
+    align-items: center;
+} */
+
+.header-list-item {
+    margin-right: 45px;
+}
+
+.header-nav-margin-contant {
+    justify-content: space-between;
+}
+
+.header-list-left {
+    margin: 0;
+}
+
+.header-item-btn:not(:last-child) {
+    margin-right: 45px;
+}
+
+.offer-list-item {
+    position: relative;
+}
+
+.offer-list-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.offer-adv-title {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.offer-adv-descr-price {
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    font-size: 20px;
+    min-width: 100px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.offer-adv-descr-link {
+    position: absolute;
+    top: 198px;
+    font-size: 16px;
+}
+
+.offer-list-item-right {
+    position: relative;
+}
+
+.offer-adv-title-right {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+}
+
+.offer-adv-descr-price-right {
+    position: absolute;
+    top: 385px;
+    left: 50px;
+    font-size: 20px;
+    min-width: 100px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.offer-adv-descr-link-right {
+    position: absolute;
+    top: 485px;
+    left: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.specail-offer {
+    margin-bottom: 50px;
+}
+
+.offer-list {
+    flex-direction: column;
+}
+
+.offer-list-left {
+    flex-direction: column;
+}
+
+.offer-list-right {
+    margin-left: 24px;
+}
+
+/* .aboutUs {
+    max-width: 900px;
+} */
+
+.aboutUs-title {
+    margin: 0;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.aboutUs-descr {
+    max-width: 900px;
+}
+
+.services-title {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.services-list {
+    flex-wrap: wrap;
+  
+}
+
+
+.services-list-item {
+    outline: 1px solid black;
+    max-width: 550px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.services-list-item:not(:nth-child(2n)) {
+    margin-right: 24px;
+}
+
+.blog-previev-text-title {
+    margin-top: 26px;
+    margin-left: 45px;
+}
+
+.blog-previev-text-descr {
+    margin-left: 45px;
+    max-width: 402px;
+    margin-bottom: 35px;
+}
+
+.advantages-list {
+    flex-wrap: wrap;
+}
+
+.advantages-list-item {
+    outline: 1px solid black;
+    max-width: 276px;
+    margin-bottom: 22px;
+   
+}
+
+.advantages-list-item:not(:nth-child(4n)) {
+    margin-right: 22px;
+}
+
+.advantages-list-logo {
+    display: block;
+    max-width: 100%;
+    /* margin: auto; */
+    margin: 40px 0 0 45px;
+    /* padding-top: 40px; */
+}
+
+.advantages-item-descr {    
+    max-width: 189;
+    padding: 0 42px;
+}
+
+.placement-list {
+    flex-wrap: wrap;
+}
+
+.placement-list-item {
+    outline: 1px solid black;
+    margin-bottom: 30px;
+    max-width: 375px;
+    min-height: 440px;
+}
+
+.placement-list-item:not(:nth-child(3n)) {
+    margin-right: 20px;
+}
+
+/* .palcement-item-descr-price {
+    margin: 0;
+    margin-top: 32px;
+    margin-left: 45px;
+    margin-bottom: 16px;
+} */
+
+.placement-item-descr-aligment {
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 45px 0 45px;
+}
+
+.placement-item-descr-text {
+    margin: 0;
+    margin-left: 45px;
+    margin-bottom: 16px;
+}
+
+.placement-item-descr-place {
+    margin: 0;
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+
+.placement-item-descr-btn {
+    all: unset;
+    margin-left: 45px;
+    margin-bottom: 45px;
+    outline: 1px solid orange;
+    padding: 13px 20px;
+}
