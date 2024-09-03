@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Lagoona</title>
   </head>
   <body>
@@ -17,35 +20,39 @@
         </div>
         <nav class="header-nav">
           <div class="header-nav-margin-contant flex">
-            <ul class="header-list list-reset flex">
-              <li class="header-list-item">
-                <a href="#aboutUs" class="header-link"> О нас </a>
-              </li>
-              <li class="header-list-item">
-                <a href="#services" class="header-link"> Услуги </a>
-              </li>
-              <li class="header-list-item">
-                <a href="#advantages" class="header-link"> Преимущества </a>
-              </li>
-              <li class="header-list-item">
-                <a href="#placement" class="header-link"> Размещение </a>
-              </li>
-              <li class="header-list-item">
-                <a href="#blog" class="header-link"> Блог </a>
-              </li>
-              <li class="header-list-item">
-                <a href="#contacts" class="header-link"> Контакты </a>
-              </li>
-            </ul>
-            <ul class="header-list-left list-reset flex">
-              <button class="header-item-btn btn-reset">
-                <a href="#wont-tour" class="header-link"> Хочу тур </a>
-              </button>
+            <div class="header-nav-left">
+              <ul class="header-list list-reset flex">
+                <li class="header-list-item">
+                  <a href="#aboutUs" class="header-link"> О нас </a>
+                </li>
+                <li class="header-list-item">
+                  <a href="#services" class="header-link"> Услуги </a>
+                </li>
+                <li class="header-list-item">
+                  <a href="#advantages" class="header-link"> Преимущества </a>
+                </li>
+                <li class="header-list-item">
+                  <a href="#placement" class="header-link"> Размещение </a>
+                </li>
+                <li class="header-list-item">
+                  <a href="#blog" class="header-link"> Блог </a>
+                </li>
+                <li class="header-list-item">
+                  <a href="#contacts" class="header-link"> Контакты </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-nav-right">
+              <ul class="header-list-left list-reset flex">
+                <button class="header-item-btn btn-reset">
+                  <a href="#wont-tour" class="header-link-btn"> Хочу тур </a>
+                </button>
 
-              <button class="header-item-btn btn-reset">
-                <a href="#callback" class="header-link"> Обратный звонок </a>
-              </button>
-            </ul>
+                <button class="header-item-btn btn-reset">
+                  <a href="#callback" class="header-link-btn"> Обратный звонок </a>
+                </button>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -64,9 +71,11 @@
                 </h3>
                 <div class="offer-adv-descr position offer-adv-title">
                   <p class="offer-adv-descr-price position">от 55 000 ₽</p>
-                  <a href="#" class="offer-adv-descr-link position">
-                    Подробнее
-                  </a>
+                  <div class="offer-adv-descr-price-wrapper">
+                    <a href="#" class="offer-adv-descr-link position">
+                      <p class="offer-adv-descr-link-text">Подробнее</p>
+                    </a>
+                  </div>
                 </div>
               </li>
               <li class="offer-list-item">
@@ -76,7 +85,11 @@
                 </h3>
                 <div class="offer-adv-descr offer-adv-title">
                   <p class="offer-adv-descr-price">от 30 000 ₽</p>
-                  <a href="#" class="offer-adv-descr-link"> Подробнее </a>
+                  <div class="offer-adv-descr-price-wrapper">
+                    <a href="#" class="offer-adv-descr-link position">
+                      <p class="offer-adv-descr-link-text">Подробнее</p>
+                    </a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -127,7 +140,11 @@
                 />
                 <div class="blog-previev-text">
                   <h3 class="blog-previev-text-title">
-                    Эксклюзивное обслуживание
+                    <a href="#" class="blog-previev-text-title-link">
+                      <p class="blog-previev-title-link-text blog-width-wrapper-top-left"> 
+                        Эксклюзивное обслуживание
+                      </p>
+                    </a>
                   </h3>
                   <p class="blog-previev-text-descr">
                     Равным образом постоянный количественный рост и&nbsp;сфера
@@ -145,7 +162,11 @@
                 />
                 <div class="blog-previev-text">
                   <h3 class="blog-previev-text-title">
-                    Аренда банкетных залов
+                    <a href="#" class="blog-previev-text-title-link">
+                      <p class="blog-previev-title-link-text blog-width-wrapper-top-right"> 
+                        Аренда банкетных залов
+                      </p>
+                    </a>
                   </h3>
                   <p class="blog-previev-text-descr">
                     Значимость этих проблем настолько очевидна, что дальнейшее
@@ -163,7 +184,11 @@
                 />
                 <div class="blog-previev-text">
                   <h3 class="blog-previev-text-title">
-                    Сауны, бассейны, бани, фитнес-залы
+                    <a href="#" class="blog-previev-text-title-link">
+                      <p class="blog-previev-title-link-text blog-width-wrapper-bottom-left"> 
+                        Сауны, бассейны, бани, фитнес-залы
+                      </p>
+                    </a>
                   </h3>
                   <p class="blog-previev-text-descr">
                     Не&nbsp;следует, однако забывать, что начало повседневной
@@ -181,7 +206,11 @@
                 />
                 <div class="blog-previev-text">
                   <h3 class="blog-previev-text-title">
-                    Охраняемые автомобильные стоянки
+                    <a href="#" class="blog-previev-text-title-link">
+                      <p class="blog-previev-title-link-text blog-width-wrapper-bottom-right"> 
+                        Охраняемые автомобильные стоянки
+                      </p>
+                    </a>
                   </h3>
                   <p class="blog-previev-text-descr">
                     Не&nbsp;следует, однако забывать, что начало повседневной
@@ -747,6 +776,7 @@
           </ul>
         </div>
       </section>
+
       <section id="placement" class="placement">
         <div class="container">
           <h2 class="placement-title">Размещение</h2>
@@ -762,7 +792,7 @@
                 <div class="placement-item-descr">
                   <div class="placement-item-descr-aligment flex">
                     <p class="palcement-item-descr-price">
-                      от&nbsp;4&nbsp;698&nbsp;₽/ ночь
+                      от&nbsp;<b>4&nbsp;698&nbsp;</b><span class="placement-item-span">₽/ ночь</span>
                     </p>
                     <div class="placement-item-decsr-stars">
                       <img
@@ -806,7 +836,7 @@
                 <div class="placement-item-descr">
                   <div class="placement-item-descr-aligment flex">
                     <p class="palcement-item-descr-price">
-                      от&nbsp;5&nbsp;148&nbsp;₽/ ночь
+                      от&nbsp;<b>5&nbsp;148&nbsp;</b><span class="placement-item-span">₽/ ночь</span>
                     </p>
                     <div class="placement-item-decsr-stars">
                       <img
@@ -852,7 +882,7 @@
                 <div class="placement-item-descr">
                   <div class="placement-item-descr-aligment flex">
                     <p class="palcement-item-descr-price">
-                      от&nbsp;6&nbsp;254&nbsp;₽/ ночь
+                      от&nbsp;<b>6&nbsp;254&nbsp;</b><span class="placement-item-span">₽/ ночь</span>
                     </p>
                     <div class="placement-item-decsr-stars">
                       <img
@@ -898,7 +928,7 @@
                 <div class="placement-item-descr">
                   <div class="placement-item-descr-aligment flex">
                     <p class="palcement-item-descr-price">
-                      от&nbsp;6&nbsp;320&nbsp;₽/ ночь
+                      от&nbsp;<b>6&nbsp;320&nbsp;</b><span class="placement-item-span">₽/ ночь</span>
                     </p>
                     <div class="placement-item-decsr-stars">
                       <img
@@ -944,7 +974,7 @@
                 <div class="placement-item-descr">
                   <div class="placement-item-descr-aligment flex">
                     <p class="palcement-item-descr-price">
-                      от&nbsp;6&nbsp;457&nbsp;₽/ ночь
+                      от&nbsp;<b>6&nbsp;457&nbsp;</b><span class="placement-item-span">₽/ ночь</span>
                     </p>
                     <div class="placement-item-decsr-stars">
                       <img
@@ -990,7 +1020,7 @@
                 <div class="placement-item-descr">
                   <div class="placement-item-descr-aligment flex">
                     <p class="palcement-item-descr-price">
-                      от&nbsp;6&nbsp;320&nbsp;₽/ ночь
+                      от&nbsp;<b>6&nbsp;320&nbsp;</b><span class="placement-item-span">₽/ ночь</span>
                     </p>
                     <div class="placement-item-decsr-stars">
                       <img
@@ -1036,7 +1066,7 @@
                 <div class="placement-item-descr">
                   <div class="placement-item-descr-aligment flex">
                     <p class="palcement-item-descr-price">
-                      от&nbsp;6&nbsp;505&nbsp;₽/ ночь
+                      от&nbsp;<b>6&nbsp;505&nbsp;</b><span class="placement-item-span">₽/ ночь</span>
                     </p>
                     <div class="placement-item-decsr-stars">
                       <img
@@ -1082,7 +1112,7 @@
                 <div class="placement-item-descr">
                   <div class="placement-item-descr-aligment flex">
                     <p class="palcement-item-descr-price">
-                      от&nbsp;6&nbsp;824&nbsp;₽/ ночь
+                      от&nbsp;<b>6&nbsp;824&nbsp;</b><span class="placement-item-span">₽/ ночь</span>
                     </p>
                     <div class="placement-item-decsr-stars">
                       <img
@@ -1119,24 +1149,207 @@
                   <button class="placement-item-descr-btn">Номера</button>
                 </div>
               </li>
+              <div class="placement-list-item-last">
+                <img
+                  src="img/placement-9.jpg"
+                  alt=""
+                  class="placement-item-image-last"
+                />
+                <div class="placement-item-last-wrapper">
+                  <p class="placement-item-descr-last">
+                    <a href="#" class="placement-item-descr-last-link">Посмотреть все варианты</a>
+                  </p>
+                </div>
+              </div>
             </ul>
-            <div class="placement-list-item-last">
-              <img
-                src="img/placement-9.jpg"
-                alt=""
-                class="placement-item-image-last"
-              />
-              <p class="placement-item-descr-last">Посмотреть все варианты</p>
-            </div>
+           
           </div>
         </div>
       </section>
-      <section id="blog" class="blog"></section>
-      <section id="contacts" class="contacts"></section>
-      <section id="wont-tour" class="wont-tour"></section>
-      <section id="callback" class="callback"></section>
+      <section id="blog" class="want-tour specail-offer">
+        <div class="container container-blog">
+          <h2 class="tour-title services-title">Хочу тур</h2>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="tour-form">
+            <div class="tour-form-container">
+              <ul class="form-list list-reset flex">
+                <li class="form-list-item">
+                  <h5 class="form-list-item-title">Город вылета</h5>
+                  <select name="city" class="form-list-item-section">
+                    <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Новосибирск">Новосибирск</option>
+                    <option value="Усурийск">Усурийск</option>
+                  </select>
+                </li>
+                <li class="form-list-item">
+                  <h5 class="form-list-item-title">Страна</h5>
+                  <select name="country" class="form-list-item-section">
+                    <option value="Австралия" selected>Австралия</option>
+                    <option value="Латвия">Латвия</option>
+                    <option value="Китай">Китай</option>
+                    <option value="Россия">Россия</option>
+                  </select>
+                </li>
+                <li class="form-list-item">
+                  <h5 class="form-list-item-title">Дата прибытия</h5>
+                  <input type="date" name="date" class="form-list-item-input" required>
+                </li>
+                <li class="form-list-item">
+                  <h5 class="form-list-item-title">Ночей</h5>
+                  <input type="number" name="nitgh" min="0" placeholder="0" class="form-list-item-input" required>
+                </li>
+                <li class="form-list-item">
+                  <h5 class="form-list-item-title">Туристы</h5>
+                  <input type="number" name="tourists" min="1" class="form-list-item-input" placeholder="1" required>
+                </li>
+                <li class="form-list-item">
+                  <button class="form-list-item-button btn-reset btn">
+                    Найти
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts specail-offer">
+        <div class="container">
+          <h2 class="contacts-title section-title">Контакты</h2>
+          <div class="contacts-container-aligment flex">
+            <div class="contacts-container-wrapper">
+
+              <ul class="contacts-list list-reset">
+                <li class="contacts-list-item flex">
+                  <h4 class="contacts-list-item-title">
+                    Адрес
+                </h4>
+                <div class="contacts-list-item-descr">
+                  <p class="contacts-list-item-descr-text">
+                    Москва, улица Юности,<br> дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+                  </p>
+                </div>
+                </li>
+                <li class="contacts-list-item flex">
+                  <h4 class="contacts-list-item-title">
+                    Телефоны
+                </h4>
+                <div class="contacts-list-item-descr">
+                  <p class="contacts-list-item-descr-tel">
+                    <a href="#" target="_blank" class="contacts-link">
+                      +7 499 535-64-34
+                    </a>
+                  </p>
+                  <p class="contacts-list-item-descr-tel">
+                    <a href="#" target="_blank" class="contacts-link">
+                      +7 495 005-05-44
+                    </a>
+                  </p>
+                </div>
+                </li>
+                <li class="contacts-list-item flex">
+                  <h4 class="contacts-list-item-title">
+                    Email
+                </h4>
+                <div class="contacts-list-item-descr">
+                  <ul class="contacts-list-item-email list-reset">
+                    <li class="contacts-list-item-descr-email">
+                      <a href="#" class="contacts-list-item-eml-link">
+                        lg.oona@mail.ru
+                      </a>
+                      <p class="contacts-list-item-eml">
+                        по вопросам бронирования
+                      </p>
+                    </li>
+                    <li class="contacts-list-item-descr-email">                   
+                      <a href="#" class="contacts-list-item-eml-link">
+                        hotels.ln@mail.ru
+                      </a>
+                      <p class="contacts-list-item-eml">
+                        по вопросам сотрудничества
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                </li>
+                <li class="contacts-list-item flex">
+                  <h4 class="contacts-list-item-title">
+                    График
+                </h4>
+                <div class="contacts-list-item-descr">
+                  <p class="contacts-list-item-decrs-grafic">
+                    Понедельник-пятница,<br> с&nbsp;10:00 до&nbsp;19:00
+                  </p>
+                </div>
+                </li>
+                <div class="contacts-list-item-button">
+                  <button class="contacts-list-item-btn btn-reset">Построить маршрут</button>
+                </div>
+              </ul>
+            </div>
+            <div class="contacts-list-item-image flex">
+              <img src="img/contacts-list-right-img.png" alt="Фото" class="contacts-img">
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <footer></footer>
+    <footer>
+      <section id="callback" class="callback">
+        <div class="container">
+          <div class="container-callback-wrapper flex">
+            <div class="callback-left">
+              <p class="callback-footer-company">
+                &copy;&nbsp;2012&ndash;2020 Управляющая компания<br> Объединённой сети &laquo;Лагуна Хотелс&raquo;
+              </p>
+              <p class="callback-footer-public">
+                Представленная на&nbsp;сайте информация<br> носит справочный характер<br> и&nbsp;не&nbsp;является публичной офертой
+              </p>
+              <p class="callback-footer-agreement">
+                <a href="#" class="callback-left-link">
+                  Пользовательское соглашение
+                </a>
+              </p>
+            </div>
+
+            <div class="callback-center">
+              <address class="callback-fotter-address">
+                11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+              </address>
+              <p class="callback-footer-tel callback-tel-top-wrapper callback-telephone">
+                <a href="#" class="callback-center-tel-link">
+                  +7 499 535-64-34
+                </a>
+              </p>
+              <p class="callback-footer-tel callback-tel-bottom-wrapper">
+                <a href="#" class="callback-center-tel-link">
+                  +7 495 005-05-44
+                </a>
+              </p>
+              <p class="callback-footer-eml">
+                <a href="#" class="callback-center-email-link">
+                  lg.oona@mail.ru
+                </a>
+              </p>
+              <p class="callback-footer-eml">
+                <a href="#" class="callback-center-email-link">
+                  hotels.ln@mail.ru
+                </a>
+              </p>
+            </div>
+
+            <div class="callback-right flex">
+              <img src="./img/footer-right-1.svg" alt="logotip" class="footer-right-1">
+              <img src="./img/footer-right-2.svg" alt="logotip" class="footer-right-1">
+              <img src="./img/footer-right-3.svg" alt="logotip" class="footer-right-1">
+            </div>
+            <div class="callback-background-image"></div>
+          </div>
+          </div>
+      </section>
+    </footer>
   </body>
 </html>
